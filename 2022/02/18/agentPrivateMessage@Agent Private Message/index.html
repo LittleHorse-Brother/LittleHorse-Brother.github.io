@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="Hexo Theme Keep">
+    <meta name="author" content="Keep Team">
+    
+    <title>
+        
+        Keep Theme
+    </title>
+    
+<link rel="stylesheet" href="/XiaoMaGe.github.io/css/style.css">
+
+    <link rel="shortcut icon" href="/XiaoMaGe.github.io/images/logo.svg">
+    
+<link rel="stylesheet" href="/XiaoMaGe.github.io/css/font-awesome.min.css">
+
+    <script id="hexo-configurations">
+    let KEEP = window.KEEP || {};
+    KEEP.hexo_config = {"hostname":"littlehorse-brother.github.io","root":"/XiaoMaGe.github.io/","language":"en"};
+    KEEP.theme_config = {"toc":{"enable":false,"number":false,"expand_all":false,"init_open":false},"style":{"primary_color":"#0066CC","avatar":"/images/avatar.svg","favicon":"/images/logo.svg","article_img_align":"left","left_side_width":"260px","content_max_width":"920px","hover":{"shadow":false,"scale":false},"first_screen":{"enable":false,"background_img":"/images/bg.svg","description":"Keep writing and Keep loving."},"scroll":{"progress_bar":{"enable":false},"percent":{"enable":false}}},"local_search":{"enable":false,"preload":false},"code_copy":{"enable":false,"style":"default"},"pjax":{"enable":false},"lazyload":{"enable":false},"version":"3.4.5"};
+    KEEP.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
+  </script>
+<meta name="generator" content="Hexo 6.0.0"></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+
+    
+</div>
+
+
+<main class="page-container">
+
+    
+
+    <div class="page-main-content">
+
+        <div class="page-main-content-top">
+            <header class="header-wrapper">
+
+    <div class="header-content">
+        <div class="left">
+            
+            <a class="logo-title" href="/">
+                Keep Theme
+            </a>
+        </div>
+
+        <div class="right">
+            <div class="pc">
+                <ul class="menu-list">
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/XiaoMaGe.github.io/"
+                            >
+                                HOME
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/XiaoMaGe.github.io/archives"
+                            >
+                                ARCHIVES
+                            </a>
+                        </li>
+                    
+                    
+                </ul>
+            </div>
+            <div class="mobile">
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list">
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/XiaoMaGe.github.io/">HOME</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/XiaoMaGe.github.io/archives">ARCHIVES</a>
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle">
+
+            <div class="main-content">
+
+                
+                    <div class="fade-in-down-animation">
+    <div class="article-content-container">
+
+        <div class="article-title">
+            <span class="title-hover-animation"></span>
+        </div>
+
+        
+            <div class="article-header">
+                <div class="avatar">
+                    <img src="/XiaoMaGe.github.io/images/avatar.svg">
+                </div>
+                <div class="info">
+                    <div class="author">
+                        <span class="name">Keep Team</span>
+                        
+                            <span class="author-label">Lv1</span>
+                        
+                    </div>
+                    <div class="meta-info">
+                        <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fas fa-edit"></i>&nbsp;
+        <span class="pc">2022-02-18 10:15:18</span>
+        <span class="mobile">2022-02-18 10:15</span>
+    </span>
+    
+    
+
+    
+    
+    
+    
+</div>
+
+                    </div>
+                </div>
+            </div>
+        
+
+        <div class="article-content markdown-body">
+            <h2 id="Agent-Private-Message"><a href="#Agent-Private-Message" class="headerlink" title="Agent Private Message"></a>Agent Private Message</h2><ul>
+<li><code>Agent Private Messages</code> - Agent Private Messages Manage<ul>
+<li><code>POST livechat/agentPrivateMessages:Search</code> - <a href="#search-agent-private-messages">Search Agent Private Messages</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="Agent-Private-Message-JSON-Format"><a href="#Agent-Private-Message-JSON-Format" class="headerlink" title="Agent Private Message JSON Format"></a><div id="agentPrivateMessageModel">Agent Private Message JSON Format</div></h3><h4 id="Agent-Private-Message-is-represented-as-simple-flat-JSON-objects-with-the-following-keys"><a href="#Agent-Private-Message-is-represented-as-simple-flat-JSON-objects-with-the-following-keys" class="headerlink" title="Agent Private Message is represented as simple flat JSON objects with the following keys:"></a>Agent Private Message is represented as simple flat JSON objects with the following keys:</h4><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>id</code></td>
+<td align="left">integer</td>
+<td align="left">Id of the private message.</td>
+</tr>
+<tr>
+<td align="left"><code>formAgentId</code></td>
+<td align="left">guid</td>
+<td align="left">Id of the sender agent.</td>
+</tr>
+<tr>
+<td align="left"><code>toAgentId</code></td>
+<td align="left">guid</td>
+<td align="left">Id of the recipient agent.</td>
+</tr>
+<tr>
+<td align="left"><code>content</code></td>
+<td align="left">string</td>
+<td align="left">Content of the private message.</td>
+</tr>
+<tr>
+<td align="left"><code>attachmentFileKey</code></td>
+<td align="left">string</td>
+<td align="left">Key value of the attachment.</td>
+</tr>
+<tr>
+<td align="left"><code>time</code></td>
+<td align="left">datetime</td>
+<td align="left">Time of the private message.</td>
+</tr>
+</tbody></table>
+<h3 id="Search-Agent-Private-Messages"><a href="#Search-Agent-Private-Messages" class="headerlink" title="Search Agent Private Messages"></a>Search Agent Private Messages</h3><p>  <code>POST livechat/agentPrivateMessages:Search</code></p>
+<ul>
+<li><h4 id="Parameters"><a href="#Parameters" class="headerlink" title="Parameters:"></a>Parameters:</h4></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">in</th>
+<th align="left">Required</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>pageIndex</code></td>
+<td align="left">integer</td>
+<td align="left">query</td>
+<td align="left">no</td>
+<td align="left">Page index.</td>
+</tr>
+<tr>
+<td align="left"><code>filters</code></td>
+<td align="left">array</td>
+<td align="left">body</td>
+<td align="left">no</td>
+<td align="left">Filter array. Available items are: requestedTime, agent.</td>
+</tr>
+<tr>
+<td align="left"><code>pageSize</code></td>
+<td align="left">integer</td>
+<td align="left">query</td>
+<td align="left">no</td>
+<td align="left">Page size.</td>
+</tr>
+<tr>
+<td align="left"><code>include</code></td>
+<td align="left">string</td>
+<td align="left">query</td>
+<td align="left">no</td>
+<td align="left">Available values for Include are: “campaign”, “chatAgent”, “chatWrapupCategory”, “contactIdentity”, “department”, “fromAgent”, “toAgent”.</td>
+</tr>
+</tbody></table>
+<ul>
+<li><h4 id="Response"><a href="#Response" class="headerlink" title="Response:"></a>Response:</h4><p>An array of <a href="#agentPrivateMessageModel">Agent Private Message</a></p>
+</li>
+<li><h4 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h4><p>Sample Request:</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">curl https://rabbit6api.comm100dev.io/v4/livechat/agentPrivateMessages:search \ </span><br><span class="line">    -X &#x27;POST&#x27; \ </span><br><span class="line">    -H &#x27;Authorization: Bearer &#123;access_token&#125;&#x27; \ </span><br><span class="line">    -H &#x27;Content-Type: application/json&#x27; \ </span><br><span class="line">    -D &#x27;&#123;&quot;filters&quot;:[&#123;&quot;name&quot;:&quot;time&quot;,&quot;operator&quot;:&quot;is&quot;,&quot;value&quot;:[&quot;2021-04-24T07:00:00.000Z&quot;,&quot;2021-04-25T07:00:00.000Z&quot;]&#125;,&#123;&quot;name&quot;:&quot;keywords&quot;,&quot;operator&quot;:&quot;is&quot;,&quot;value&quot;:[&quot;hello&quot;]&#125;]&#125;&#x27; </span><br></pre></td></tr></table></figure>
+<p>Response:</p>
+<p> HTTP&#x2F;1.1 200 OK</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;total&quot;</span><span class="punctuation">:</span> <span class="number">1</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;pageCount&quot;</span><span class="punctuation">:</span> <span class="number">0</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;list&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">      <span class="punctuation">&#123;</span></span><br><span class="line">          <span class="attr">&quot;id&quot;</span><span class="punctuation">:</span> <span class="number">5</span><span class="punctuation">,</span></span><br><span class="line">          <span class="attr">&quot;fromAgentId&quot;</span><span class="punctuation">:</span> <span class="string">&quot;3f41bdd2-0a1a-4c5a-9400-c275e52fe892&quot;</span><span class="punctuation">,</span></span><br><span class="line">          <span class="attr">&quot;toAgentId&quot;</span><span class="punctuation">:</span> <span class="string">&quot;87ad4be9-89f5-4e57-ae9e-2d5fee8ed3e5&quot;</span><span class="punctuation">,</span></span><br><span class="line">          <span class="attr">&quot;text&quot;</span><span class="punctuation">:</span> <span class="string">&quot;hello&quot;</span><span class="punctuation">,</span></span><br><span class="line">          <span class="attr">&quot;messageType&quot;</span><span class="punctuation">:</span> <span class="string">&quot;text&quot;</span><span class="punctuation">,</span></span><br><span class="line">          <span class="attr">&quot;attachmentFileKey&quot;</span><span class="punctuation">:</span> <span class="string">&quot;                                                                                                                                                                                                                                                                &quot;</span><span class="punctuation">,</span></span><br><span class="line">          <span class="attr">&quot;time&quot;</span><span class="punctuation">:</span> <span class="string">&quot;2021-02-03T09:22:24.9893626Z&quot;</span></span><br><span class="line">      <span class="punctuation">&#125;</span></span><br><span class="line">  <span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;pageIndex&quot;</span><span class="punctuation">:</span> <span class="number">-1</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;pageSize&quot;</span><span class="punctuation">:</span> <span class="number">0</span></span><br><span class="line"><span class="punctuation">&#125;</span> </span><br></pre></td></tr></table></figure></li>
+</ul>
+
+        </div>
+
+        
+
+        
+
+        
+            <div class="article-nav">
+                
+                    <div class="article-prev">
+                        <a class="prev"
+                           rel="prev"
+                           href="/XiaoMaGe.github.io/2022/02/18/androidPush@Android%20Push/"
+                        >
+                            <span class="left arrow-icon flex-center">
+                              <i class="fas fa-chevron-left"></i>
+                            </span>
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item"></span>
+                                <span class="post-nav-item">Prev posts</span>
+                            </span>
+                        </a>
+                    </div>
+                
+                
+            </div>
+        
+
+        
+    </div>
+</div>
+
+
+                
+            </div>
+
+        </div>
+
+        <div class="page-main-content-bottom">
+            <footer class="footer">
+    <div class="info-container">
+        <div class="copyright-info info-item">
+            &copy;
+            
+              <span>2020</span>
+              -
+            
+            2022&nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;<a href="/">Keep Team</a>
+        </div>
+        
+        <div class="theme-info info-item">
+            Powered by <a target="_blank" href="https://hexo.io">Hexo</a>&nbsp;|&nbsp;Theme&nbsp;<a class="theme-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep v3.4.5</a>
+        </div>
+        
+        
+    </div>
+</footer>
+
+        </div>
+    </div>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="tools-list">
+        <!-- TOC aside toggle -->
+        
+
+        <!-- go comment -->
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <div class="right-bottom-side-tools">
+        <div class="side-tools-container">
+    <ul class="side-tools-list">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <li class="tools-item tool-expand-width flex-center">
+            <i class="fas fa-arrows-alt-h"></i>
+        </li>
+
+        <li class="tools-item tool-dark-light-toggle flex-center">
+            <i class="fas fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+            <li class="tools-item tool-scroll-to-top flex-center">
+                <i class="fas fa-arrow-up"></i>
+            </li>
+        
+
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list">
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    
+
+    <div class="image-viewer-container">
+    <img src="">
+</div>
+
+
+    
+
+</main>
+
+
+
+
+<script src="/XiaoMaGe.github.io/js/utils.js"></script>
+
+<script src="/XiaoMaGe.github.io/js/main.js"></script>
+
+<script src="/XiaoMaGe.github.io/js/header-shrink.js"></script>
+
+<script src="/XiaoMaGe.github.io/js/back2top.js"></script>
+
+<script src="/XiaoMaGe.github.io/js/dark-light-toggle.js"></script>
+
+
+
+
+
+
+
+
+<div class="post-scripts">
+    
+</div>
+
+
+
+</body>
+</html>
